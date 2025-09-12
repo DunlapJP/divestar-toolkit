@@ -1,0 +1,6 @@
+# Ignore Windows thumbnail cache files
+Thumbs.db
+
+# Ignores temporary files created by some text editors
+*.swp
+*~
