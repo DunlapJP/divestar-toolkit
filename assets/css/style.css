@@ -88,3 +88,21 @@ h1, h2, h3 {
     font-family: var(--header-font);
     color: var(--primary-red);
 }
+/* --- Footer --- */
+.footer-container {
+    background-color: #f0f0f0;
+    border-top: 1px solid #e0e0e0;
+    text-align: center;
+    padding: 20px 40px;
+    font-size: 0.9em;
+    color: #666;
+}
+
+.footer-container a {
+    color: var(--primary-green);
+    text-decoration: none;
+}
+
+.footer-container a:hover {
+    text-decoration: underline;
+}
