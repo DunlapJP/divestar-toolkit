@@ -1,0 +1,90 @@
+/* /assets/css/style.css */
+
+/* --- Color and Font Variables --- */
+:root {
+    --primary-red: #d94545; /* Approximate red from the logo */
+    --primary-green: #3a8c5b; /* Approximate green from the logo */
+    --dark-text: #333333;
+    --background-color: #fdfdfd;
+    --header-font: 'Georgia', serif;
+    --body-font: 'Helvetica', Arial, sans-serif;
+}
+
+/* --- General Body Styling --- */
+body {
+    font-family: var(--body-font);
+    background-color: var(--background-color);
+    color: var(--dark-text);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* --- Header and Logo --- */
+.header-container {
+    background-color: #fff;
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid var(--primary-green);
+}
+
+.logo {
+    width: 80px; /* Adjust size as needed */
+    height: auto;
+    margin-right: 20px;
+}
+
+.site-title {
+    font-family: var(--header-font);
+    font-size: 2.5em;
+    color: var(--primary-red);
+    margin: 0;
+}
+
+.site-description {
+    font-size: 1.1em;
+    margin: 5px 0 0 0;
+    color: var(--dark-text);
+}
+
+
+/* --- Navigation Bar --- */
+nav {
+    background-color: var(--primary-green);
+    padding: 15px 40px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    padding-bottom: 5px;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s;
+}
+
+nav a:hover {
+    border-bottom: 2px solid var(--primary-red);
+}
+
+/* --- Main Content Area --- */
+.main-content {
+    padding: 40px;
+    max-width: 900px;
+    margin: auto;
+}
+
+h1, h2, h3 {
+    font-family: var(--header-font);
+    color: var(--primary-red);
+}
