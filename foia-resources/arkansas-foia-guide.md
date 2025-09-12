@@ -10,7 +10,7 @@ This guide, based on the **2025 Arkansas FOIA Handbook**, will walk you through 
 
 The full text of the Arkansas Freedom of Information Act can be found in the **Arkansas Code Annotated § 25-19-101 et seq.**
 
-For a comprehensive overview, you can reference the **[2025 Arkansas FOIA Handbook, 21st Edition](./2025-FOIA-Handbook-21st-Edition-ver4.pdf)**, which is the primary source for this guide.
+For a comprehensive overview, you can reference the **[2025 Arkansas FOIA Handbook, 21st Edition](../source-documents/2025-FOIA-Handbook-21st-Edition-ver4.pdf)**, which is the primary source for this guide.
 
 ---
 
