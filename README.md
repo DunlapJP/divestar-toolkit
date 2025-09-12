@@ -9,10 +9,10 @@ An open-source toolkit for the Divest for AR Future campaign. This repository tr
 ### ## Explore the Toolkit
 
 * **[📈 Investment Data](./investment-data/investments.csv)**: View the complete, sourced dataset of Arkansas's investments in Israel Bonds.
-* **[📂 Evidence Archive](./source-documents/)**: Browse the full archive of primary source documents and FOIA responses.
-* **[🎯 Key Decision-Makers](./key-officials/)**: Find contact information for the board members of ATRS and APERS.
-* **[📣 Action Templates](./action-templates/)**: Get email and phone scripts to make your voice heard.
-* **[🔎 FOIA Resources](./foia-resources/)**: Learn how to file your own FOIA requests with our guide and templates.
+* **[📂 Evidence Archive](./source-documents/index.md)**: Browse the full archive of primary source documents and FOIA responses.
+* **[🎯 Key Decision-Makers](./key-officials/index.md)**: Find contact information for the board members of ATRS and APERS.
+* **[📣 Action Templates](./action-templates/index.md)**: Get email and phone scripts to make your voice heard.
+* **[🔎 FOIA Resources](./foia-resources/index.md)**: Learn how to file your own FOIA requests with our guide and templates.
 
 ---
 
