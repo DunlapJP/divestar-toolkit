@@ -4,7 +4,7 @@ This archive contains the primary source documents used to build the DivestAR To
 
 ## Core Documents
 
-* **[2024-10-07_AR-Treasury_Portfolio-Holdings_Israel-Bonds.xlsx](./2024-10-07_AR-Treasury_Portfolio-Holdings_Israel-Bonds.xlsx%20-%20Israel%20Bonds.csv)**: The original spreadsheet detailing the State Treasurer's Israel Bond holdings.
+* **[2024-10-07_AR-Treasury_Portfolio-Holdings_Israel-Bonds.xlsx](./2024-10-07_AR-Treasury_Portfolio-Holdings_Israel-Bonds.xlsx)**: The original spreadsheet detailing the State Treasurer's Israel Bond holdings.
 * **[2017_AR-Legislature_Act-555_Investment-Policy.pdf](./2017_AR-Legislature_Act-555_Investment-Policy.pdf)**: The state law that amended investment policy.
 * **[2025_FOIA-Handbook-21st-Edition-ver4.pdf](./2025-FOIA-Handbook-21st-Edition-ver4.pdf)**: The official guide to the Arkansas Freedom of Information Act.
 
