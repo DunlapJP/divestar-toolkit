@@ -13,27 +13,33 @@ This dashboard visualizes the data from our research, showing the total public f
 
 <script>
 document.addEventListener("DOMContentLoaded", function() {
-  // Path to your CSV data file
   const csvFile = '{{ "/investment-data/investments.csv" | relative_url }}';
 
-  // Use PapaParse to fetch and parse the CSV file
   Papa.parse(csvFile, {
     download: true,
     header: true,
     complete: function(results) {
       const data = results.data;
       
-      // Process the data to sum amounts by each entity
+      // A more robust way to process the data based on Transaction_Type
       const investmentData = data.reduce((acc, row) => {
         const entity = row.Entity;
         const amount = parseFloat(row.Amount);
+        const type = row.Transaction_Type;
 
-        // We only want to sum entries that are currently held or authorized
-        if (entity && !isNaN(amount) && (row.Status === 'Held' || row.Status === 'Authorized')) {
-          if (!acc[entity]) {
-            acc[entity] = 0;
+        if (entity && !isNaN(amount)) {
+          // For Authorizations, we sum them up (in case there are multiple)
+          if (type === 'Authorization') {
+            if (!acc[entity]) {
+              acc[entity] = 0;
+            }
+            acc[entity] += amount;
+          } 
+          // For Portfolio Holding, we take the value directly, overwriting any previous data
+          // This ensures we show the latest snapshot for the Treasury
+          else if (type === 'Portfolio Holding') {
+            acc[entity] = amount;
           }
-          acc[entity] += amount;
         }
         return acc;
       }, {});
@@ -41,10 +47,7 @@ document.addEventListener("DOMContentLoaded", function() {
       const labels = Object.keys(investmentData);
       const values = Object.values(investmentData);
 
-      // Get the canvas element to draw the chart on
       const ctx = document.getElementById('investmentChart').getContext('2d');
-      
-      // Create the bar chart using Chart.js
       new Chart(ctx, {
         type: 'bar',
         data: {
@@ -52,7 +55,7 @@ document.addEventListener("DOMContentLoaded", function() {
           datasets: [{
             label: 'Total Investment/Authorization ($)',
             data: values,
-            backgroundColor: 'rgba(217, 69, 69, 0.7)', // Using your --primary-red with transparency
+            backgroundColor: 'rgba(217, 69, 69, 0.7)',
             borderColor: 'rgba(217, 69, 69, 1)',
             borderWidth: 1
           }]
@@ -64,7 +67,6 @@ document.addEventListener("DOMContentLoaded", function() {
             y: {
               beginAtZero: true,
               ticks: {
-                // Format the y-axis labels as currency
                 callback: function(value) {
                   return '$' + new Intl.NumberFormat().format(value);
                 }
@@ -73,10 +75,9 @@ document.addEventListener("DOMContentLoaded", function() {
           },
           plugins: {
             legend: {
-              display: false // Hide the legend as it's self-explanatory
+              display: false
             },
             tooltip: {
-              // Format the tooltip that appears on hover
               callbacks: {
                 label: function(context) {
                   let label = context.dataset.label || '';
