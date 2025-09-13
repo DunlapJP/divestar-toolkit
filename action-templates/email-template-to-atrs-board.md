@@ -25,7 +25,7 @@ Dear Members of the ATRS Board of Trustees,
 
 My name is **[Your Name]**, and I am a **[Your Role, e.g., a public school teacher in Little Rock, a retired educator from Fayetteville, a concerned Arkansas citizen]**.
 
-I am writing to you today with serious concerns about the board's decision in June 2025 to authorize an investment of up to \\$50 million of our state's teacher retirement funds in Israel Bonds.
+I am writing to you today with serious concerns about the board's decision in June 2025 to authorize an investment of up to \$50 million of our state's teacher retirement funds in Israel Bonds.
 
 As you know, your primary fiduciary duty is to protect the financial security of the pension fund for the thousands of Arkansas teachers who depend on it. This investment seems to expose our collective retirement funds to significant geopolitical and financial risks. Major credit rating agencies, including Moody's and S&P Global, have recently downgraded Israel's credit outlook, citing the ongoing conflict.
 
