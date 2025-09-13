@@ -130,3 +130,37 @@ h2 {
     border-bottom: 2px solid #eeeeee;
     font-weight: normal;
 }
+
+/* --- Data Dashboard (KPIs) --- */
+.data-dashboard {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.kpi-group {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.kpi {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    min-width: 250px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.kpi-value {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: var(--primary-red);
+}
+
+.kpi-label {
+    font-size: 1em;
+    color: #666;
+    margin-top: 5px;
+}
