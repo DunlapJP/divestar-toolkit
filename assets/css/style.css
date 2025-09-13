@@ -30,10 +30,14 @@ body {
 .page-container {
     max-width: 1100px;
     margin: auto;
-    background-color: #fff;
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
     border-radius: 12px;
     overflow: hidden;
+
+    /* --- New Frosted Glass Effect Styles --- */
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+    backdrop-filter: blur(10px); /* The blur effect */
+    -webkit-backdrop-filter: blur(10px); /* For Safari browser support */
 }
 
 /* --- Header and Logo --- */
