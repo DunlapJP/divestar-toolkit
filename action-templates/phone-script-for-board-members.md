@@ -18,7 +18,7 @@ This script is a guide. Use it to help you, but remember that speaking from the 
 
 *(Pause for the staffer to acknowledge you)*
 
-**You:** "I am deeply concerned about the board's recent decision to authorize a \\$50 million investment in these bonds. Given the recent credit downgrades of Israel by both Moody's and S&P, this seems like an unnecessarily risky use of our public pension funds."
+**You:** "I am deeply concerned about the board's recent decision to authorize a \$50 million investment in these bonds. Given the recent credit downgrades of Israel by both Moody's and S&P, this seems like an unnecessarily risky use of our public pension funds."
 
 **You:** "Exposing our state's retirement funds to the volatility of a foreign conflict is a breach of the board's fiduciary duty to protect the financial security of its members."
 
