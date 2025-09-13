@@ -1,6 +1,6 @@
 # Arkansas Public Employees' Retirement System (APERS) Board of Trustees
 
-This is the official board of trustees for the Arkansas Public Employees' Retirement System (APERS). This body is responsible for the fiduciary oversight of the pension fund, including the authorization of a \\$50 million investment in Israel Bonds on June 11, 2025.
+This is the official board of trustees for the Arkansas Public Employees' Retirement System (APERS). This body is responsible for the fiduciary oversight of the pension fund, including the authorization of a \$50 million investment in Israel Bonds on June 11, 2025.
 
 The contact information below has been verified from official public sources. Where a direct line is not available, the main office contact is provided.
 
