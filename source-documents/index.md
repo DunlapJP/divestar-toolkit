@@ -7,7 +7,7 @@ This archive contains the primary source documents used to build the DivestAR To
 ## Core Documents
 
 * **[Arkansas State Treasury Israel Bond Holdings (Oct. 7, 2024)](./2024-10-07_AR-Treasury_Portfolio-Holdings_Israel-Bonds.xlsx)**
-    > A spreadsheet detailing the State Treasurer's Israel Bond portfolio, showing a total market value of **$50,717,967** with an unrealized loss of **$1,282,033** as of the report date.
+    > This spreadsheet details the State Treasurer's Israel Bond portfolio. While this report shows a then-current face value of $52 million due to bond maturities, it confirms the state's significant, ongoing investment which peaked at $57 million.
 
 * **[Act 555 of 2017: Amending State Investment Law](./2017_AR-Legislature_Act-555_Investment-Policy.pdf)**
     > "AN ACT TO AMEND THE LAW CONCERNING THE TRANSFER AND INVESTMENT AUTHORITY AND DUTIES OF THE TREASURER OF STATE..." This act laid the political groundwork for future state investments in Israel.
