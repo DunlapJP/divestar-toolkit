@@ -1,12 +1,33 @@
-# DivestAR Toolkit
-
-[![License: CC BY-SA 4.0](https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
-
-An open-source toolkit for the Divest for AR Future campaign. This repository tracks Arkansas's public investments in Israel Bonds, provides contact information for decision-makers, and offers templates for direct action. Our goal is to empower activists and achieve financial transparency and divestment in Arkansas.
+<div class="data-dashboard">
+    <div class="kpi-group">
+        <div class="kpi">
+            <div class="kpi-value">$52 Million</div>
+            <div class="kpi-label">Invested by AR State Treasury (Face Value)</div>
+        </div>
+        <div class="kpi">
+            <div class="kpi-value">$100 Million</div>
+            <div class="kpi-label">Authorized by AR Pension Funds (ATRS & APERS)</div>
+        </div>
+        <div class="kpi">
+            <div class="kpi-value">$152 Million</div>
+            <div class="kpi-label">Total Arkansas Public Funds Committed</div>
+        </div>
+    </div>
+</div>
 
 ---
 
-### ## Explore the Toolkit
+### An Open-Source Toolkit for a Divestment Campaign
+
+The state of Arkansas currently has **$152 million** of public money either invested in or authorized for the purchase of Israel Bonds. These funds include **$52 million** from the State Treasury and **$100 million** authorized by the state's two largest public pension systems, ATRS and APERS.
+
+This toolkit is an open-source, collaborative resource for the **Divest for AR Future** campaign. It tracks these public investments, provides contact information for the officials responsible, and offers templates for direct action. Our goal is to empower citizens and activists with verifiable data to achieve financial transparency and advocate for the divestment of our public funds.
+
+This toolkit is a living project, maintained by members of **Little Rock Peace for Palestine** and **Divest for AR Future**.
+
+---
+
+###  Explore the Toolkit
 
 * **[📈 Investment Data](./investment-data/investments.csv)**: View the complete, sourced dataset of Arkansas's investments in Israel Bonds.
 * **[📂 Evidence Archive](./source-documents/index.md)**: Browse the full archive of primary source documents and FOIA responses.
@@ -16,16 +37,10 @@ An open-source toolkit for the Divest for AR Future campaign. This repository tr
 
 ---
 
-### ## 🎯 Our Goal
-
-The state of Arkansas currently holds significant investments in Israel Bonds, using public funds—including state and teacher pensions—to financially support the state of Israel. This repository is a central hub for the research, data, and tools we are using to challenge and end this complicity. We believe in a future where our state's investments reflect our values of peace, justice, and human rights for all.
-
-This toolkit is a living project, maintained by members of **Little Rock Peace for Palestine** and **Divest for AR Future**.
-
-### ## 🤝 How to Contribute
+###  🤝 How to Contribute
 
 This is a collaborative effort, and we welcome your help! If you have new information or find an error, please open an "Issue" at the top of the GitHub repository page to let us know.
 
-### ## 📜 License
+###  📜 License
 
 The content of this repository is licensed under the [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/).
