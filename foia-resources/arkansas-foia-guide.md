@@ -6,7 +6,7 @@ This guide, based on the **2025 Arkansas FOIA Handbook**, will walk you through 
 
 ---
 
-### ## The Law
+###  The Law
 
 The full text of the Arkansas Freedom of Information Act can be found in the **Arkansas Code Annotated § 25-19-101 et seq.**
 
@@ -14,7 +14,7 @@ For a comprehensive overview, you can reference the **[2025 Arkansas FOIA Handbo
 
 ---
 
-### ## Who Can You Request Records From?
+###  Who Can You Request Records From?
 
 The Arkansas FOIA applies to any state or local government agency, board, or commission. For the purposes of this toolkit, the most relevant bodies include:
 
@@ -26,7 +26,7 @@ The Arkansas FOIA applies to any state or local government agency, board, or com
 
 ---
 
-### ## How to File a Request: A Step-by-Step Guide
+###  How to File a Request: A Step-by-Step Guide
 
 #### **Step 1: Identify the Records You Need**
 
@@ -59,7 +59,7 @@ Under Arkansas law, the agency must respond to your request within **three (3) b
 
 ---
 
-### ## Tips for a Successful Request
+###  Tips for a Successful Request
 
 * **Be Polite and Professional:** You are more likely to get a helpful response if you are courteous.
 * **Keep a Record:** Save a copy of your request and all correspondence with the agency.
@@ -68,6 +68,6 @@ Under Arkansas law, the agency must respond to your request within **three (3) b
 
 ---
 
-### ## What If Your Request is Denied?
+###  What If Your Request is Denied?
 
 If your request is denied, the agency must provide you with a written explanation citing the specific legal exemption that allows them to withhold the records. If you believe the denial is improper, you can challenge it.
