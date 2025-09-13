@@ -1,7 +1,7 @@
 <div class="data-dashboard">
     <div class="kpi-group">
         <div class="kpi">
-            <div class="kpi-value">$52 Million</div>
+            <div class="kpi-value">$57 Million</div>
             <div class="kpi-label">Invested by AR State Treasury (Face Value)</div>
         </div>
         <div class="kpi">
@@ -9,7 +9,7 @@
             <div class="kpi-label">Authorized by AR Pension Funds (ATRS & APERS)</div>
         </div>
         <div class="kpi">
-            <div class="kpi-value">$152 Million</div>
+            <div class="kpi-value">$157 Million</div>
             <div class="kpi-label">Total Arkansas Public Funds Committed</div>
         </div>
     </div>
@@ -19,7 +19,7 @@
 
 ### An Open-Source Toolkit for a Divestment Campaign
 
-The state of Arkansas currently has **$152 million** of public money either invested in or authorized for the purchase of Israel Bonds. These funds include **$52 million** from the State Treasury and **$100 million** authorized by the state's two largest public pension systems, ATRS and APERS.
+The state of Arkansas currently has **$157 million** of public money either invested in or authorized for the purchase of Israel Bonds. These funds include **$57 million** from the State Treasury and **$100 million** authorized by the state's two largest public pension systems, ATRS and APERS.
 
 This toolkit is an open-source, collaborative resource for the **Divest for AR Future** campaign. It tracks these public investments, provides contact information for the officials responsible, and offers templates for direct action. Our goal is to empower citizens and activists with verifiable data to achieve financial transparency and advocate for the divestment of our public funds.
 
