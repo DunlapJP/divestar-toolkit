@@ -21,11 +21,11 @@ document.addEventListener("DOMContentLoaded", function() {
     complete: function(results) {
       const data = results.data;
       
-      // This logic now specifically looks for the most definitive commitment amounts
       const investmentData = data.reduce((acc, row) => {
-        const entity = row.Entity;
+        // Use .trim() to remove any hidden whitespace from the data
+        const entity = row.Entity ? row.Entity.trim() : '';
+        const type = row.Transaction_Type ? row.Transaction_Type.trim() : '';
         const amount = parseFloat(row.Amount);
-        const type = row.Transaction_Type;
 
         // We only want to chart the peak holdings and authorizations
         if (entity && !isNaN(amount) && (type === 'Peak Holding' || type === 'Authorization')) {
