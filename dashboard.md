@@ -21,25 +21,15 @@ document.addEventListener("DOMContentLoaded", function() {
     complete: function(results) {
       const data = results.data;
       
-      // A more robust way to process the data based on Transaction_Type
+      // This logic now specifically looks for the most definitive commitment amounts
       const investmentData = data.reduce((acc, row) => {
         const entity = row.Entity;
         const amount = parseFloat(row.Amount);
         const type = row.Transaction_Type;
 
-        if (entity && !isNaN(amount)) {
-          // For Authorizations, we sum them up (in case there are multiple)
-          if (type === 'Authorization') {
-            if (!acc[entity]) {
-              acc[entity] = 0;
-            }
-            acc[entity] += amount;
-          } 
-          // For Portfolio Holding, we take the value directly, overwriting any previous data
-          // This ensures we show the latest snapshot for the Treasury
-          else if (type === 'Portfolio Holding') {
+        // We only want to chart the peak holdings and authorizations
+        if (entity && !isNaN(amount) && (type === 'Peak Holding' || type === 'Authorization')) {
             acc[entity] = amount;
-          }
         }
         return acc;
       }, {});
