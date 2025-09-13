@@ -6,7 +6,7 @@ The contact information below has been verified from official public sources. Wh
 
 ---
 
-### ## Board Members
+###  Board Members
 
 **Ex Officio Trustees (Appointed by position):**
 
