@@ -13,19 +13,22 @@ This dashboard visualizes the data from our research, showing the total public f
 
 <script>
 document.addEventListener("DOMContentLoaded", function() {
+  // Path to your CSV data file
   const csvFile = '{{ "/investment-data/investments.csv" | relative_url }}';
 
+  // Use PapaParse to fetch and parse the CSV file
   Papa.parse(csvFile, {
     download: true,
     header: true,
     complete: function(results) {
       const data = results.data;
       
-      // Process data to sum amounts by entity
+      // Process the data to sum amounts by each entity
       const investmentData = data.reduce((acc, row) => {
         const entity = row.Entity;
         const amount = parseFloat(row.Amount);
 
+        // We only want to sum entries that are currently held or authorized
         if (entity && !isNaN(amount) && (row.Status === 'Held' || row.Status === 'Authorized')) {
           if (!acc[entity]) {
             acc[entity] = 0;
@@ -38,8 +41,10 @@ document.addEventListener("DOMContentLoaded", function() {
       const labels = Object.keys(investmentData);
       const values = Object.values(investmentData);
 
-      // Create the chart
+      // Get the canvas element to draw the chart on
       const ctx = document.getElementById('investmentChart').getContext('2d');
+      
+      // Create the bar chart using Chart.js
       new Chart(ctx, {
         type: 'bar',
         data: {
@@ -47,7 +52,7 @@ document.addEventListener("DOMContentLoaded", function() {
           datasets: [{
             label: 'Total Investment/Authorization ($)',
             data: values,
-            backgroundColor: 'rgba(217, 69, 69, 0.7)', // --primary-red with transparency
+            backgroundColor: 'rgba(217, 69, 69, 0.7)', // Using your --primary-red with transparency
             borderColor: 'rgba(217, 69, 69, 1)',
             borderWidth: 1
           }]
@@ -59,6 +64,7 @@ document.addEventListener("DOMContentLoaded", function() {
             y: {
               beginAtZero: true,
               ticks: {
+                // Format the y-axis labels as currency
                 callback: function(value) {
                   return '$' + new Intl.NumberFormat().format(value);
                 }
@@ -67,9 +73,10 @@ document.addEventListener("DOMContentLoaded", function() {
           },
           plugins: {
             legend: {
-              display: false
+              display: false // Hide the legend as it's self-explanatory
             },
             tooltip: {
+              // Format the tooltip that appears on hover
               callbacks: {
                 label: function(context) {
                   let label = context.dataset.label || '';
