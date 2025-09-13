@@ -1,0 +1,67 @@
+# /_data/apers_trustees.yml
+- name: "Hon. Dennis Milligan"
+  title: "Auditor of State"
+  email: "info@auditor.ar.gov"
+  phone: "(501) 682-6000"
+  type: "Ex Officio Trustee"
+
+- name: "Hon. Larry Walther"
+  title: "Treasurer of State"
+  email: "info@artreasury.gov"
+  phone: "(501) 682-5888"
+  type: "Ex Officio Trustee"
+
+- name: "Hon. Kay Barnhill"
+  title: "Director, Dept. of Finance & Administration"
+  email: "kay.barnhill@dfa.arkansas.gov"
+  phone: "(501) 682-2242"
+  type: "Ex Officio Trustee"
+
+- name: "Mr. Candido S. Carrejo, Jr."
+  title: "State Employee Member"
+  phone: "(501) 682-7800"
+  type: "Trustee Appointed by the Governor"
+
+- name: "Hon. David Hudson"
+  title: "County Employee Member"
+  email: "dhudson@co.sebastian.ar.us"
+  phone: "(479) 783-6139"
+  type: "Trustee Appointed by the Governor"
+
+- name: "Mr. Dale T. Douthit"
+  title: "City Employee Member"
+  email: "Dale.Douthit@Arkansas.gov"
+  phone: "(501) 682-3930"
+  type: "Trustee Appointed by the Governor"
+
+- name: "Ms. Johnita Mizell"
+  title: "Retirant Member"
+  phone: "(501) 682-7800"
+  type: "Trustee Appointed by the Governor"
+
+- name: "Mr. Larry Bryant"
+  title: "Other Non-State Employee Member"
+  phone: "(501) 682-7800"
+  type: "Trustee Appointed by the Governor"
+
+- name: "Ms. Carol C. Bevis"
+  title: "State Employee Member"
+  phone: "(501) 682-7800"
+  type: "Trustee Elected by APERS Members"
+
+- name: "Ms. Amy Fecher"
+  title: "State Employee Member"
+  email: "amy.fecher@arkansas.gov"
+  phone: "(501) 683-1678"
+  type: "Trustee Elected by APERS Members"
+
+- name: "Hon. Wes Booker"
+  title: "County Employee Member"
+  email: "wbooker@salinecounty.org"
+  phone: "(501) 303-5630"
+  type: "Trustee Elected by APERS Members"
+
+- name: "Ms. Sherry Richardson"
+  title: "City Employee Member"
+  phone: "(501) 682-7800"
+  type: "Trustee Elected by APERS Members"
