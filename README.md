@@ -1,3 +1,5 @@
+## The Financial Commitment: At a Glance
+
 <div class="data-dashboard">
     <div class="kpi-group">
         <div class="kpi">
@@ -27,7 +29,7 @@ This toolkit is a living project, maintained by members of **Little Rock Peace f
 
 ---
 
-###  Explore the Toolkit
+### ## Explore the Toolkit
 
 * **[📈 Investment Data](./investment-data/investments.csv)**: View the complete, sourced dataset of Arkansas's investments in Israel Bonds.
 * **[📂 Evidence Archive](./source-documents/index.md)**: Browse the full archive of primary source documents and FOIA responses.
@@ -37,10 +39,10 @@ This toolkit is a living project, maintained by members of **Little Rock Peace f
 
 ---
 
-###  🤝 How to Contribute
+### ## 🤝 How to Contribute
 
 This is a collaborative effort, and we welcome your help! If you have new information or find an error, please open an "Issue" at the top of the GitHub repository page to let us know.
 
-###  📜 License
+### ## 📜 License
 
 The content of this repository is licensed under the [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/).
