@@ -4,14 +4,14 @@ This section provides pre-written templates to make it easy for you to contact p
 
 <ul class="action-templates-list">
   <li>
-    <a href="./email-template-to-atrs-board.md">
+    <a href="./email-template-to-atrs-board.html">
       <strong>Email Template for Pension Boards</strong>
       <br>
       <em>A respectful and firm email to send to the board members of ATRS and APERS.</em>
     </a>
   </li>
   <li>
-    <a href="./phone-script-for-board-members.md">
+    <a href="./phone-script-for-board-members.html">
       <strong>Phone Script for Board Members</strong>
       <br>
       <em>A concise script to guide you when calling the offices of board members.</em>
