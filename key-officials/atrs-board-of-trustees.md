@@ -6,7 +6,7 @@ The contact information below has been verified from official public sources.
 
 ---
 
-### ## Board Members
+###  Board Members
 
 **Member Trustees (Elected):**
 
