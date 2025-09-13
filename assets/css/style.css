@@ -266,3 +266,61 @@ h2 {
     border-radius: 12px;
     border: 1px solid var(--border-color);
 }
+
+/* --- Call to Action Box Styling --- */
+.cta-box {
+    background-color: var(--light-background);
+    border: 1px solid var(--border-color);
+    border-top: 5px solid var(--primary-red);
+    border-radius: 12px;
+    padding: 30px 40px;
+    margin: 60px 0;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.07);
+}
+
+.cta-box h2 {
+    margin-top: 0;
+    font-size: 2em;
+    color: var(--dark-text);
+}
+
+.cta-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.cta-links a {
+    display: block;
+    background-color: #fff;
+    border: 1px solid var(--border-color);
+    color: var(--dark-text);
+    padding: 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    width: 250px;
+    transition: all 0.3s ease;
+}
+
+.cta-links a:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    border-color: var(--primary-green);
+    background-color: #fff; /* Explicitly set to white */
+}
+
+.cta-links a strong {
+    color: var(--primary-green);
+    font-size: 1.3em;
+}
+
+.cta-links a em {
+    display: block;
+    font-size: 0.9em;
+    font-style: normal;
+    color: #666;
+    margin-top: 8px;
+}
