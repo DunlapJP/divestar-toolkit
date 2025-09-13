@@ -5,7 +5,7 @@
     --primary-red: #d94545; /* Approximate red from the logo */
     --primary-green: #3a8c5b; /* Approximate green from the logo */
     --dark-text: #333333;
-    --background-color: #fdfdfd;
+    --background-color: #f9f9f9; /* Lighter gray background */
     --header-font: 'Georgia', serif;
     --body-font: 'Helvetica', Arial, sans-serif;
 }
@@ -82,12 +82,30 @@ nav a:hover {
     padding: 40px;
     max-width: 900px;
     margin: auto;
+    background-color: #fff; /* White background for content */
+    border-radius: 5px; /* Softer edges */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle shadow */
 }
 
 h1, h2, h3 {
     font-family: var(--header-font);
     color: var(--primary-red);
+    text-align: left; /* Left-align headings */
 }
+
+h1 {
+    font-size: 3em; /* Larger main heading */
+    font-weight: bold;
+}
+
+h2 {
+   font-size: 2.2em; /* Larger section headings */
+   font-weight: normal;
+   margin-top: 50px; /* More space between sections */
+   padding-bottom: 10px;
+   border-bottom: 2px solid #eeeeee;
+}
+
 
 /* --- Footer --- */
 .footer-container {
@@ -110,7 +128,6 @@ h1, h2, h3 {
 
 /* --- Homepage Section Headings --- */
 .main-content h2 {
-    text-align: center;
     font-size: 2em;
     margin-bottom: 25px;
     padding-bottom: 10px;
