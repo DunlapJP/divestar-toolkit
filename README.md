@@ -43,6 +43,6 @@ This toolkit is a living project, maintained by members of **Little Rock Peace f
 
 This is a collaborative effort, and we welcome your help! If you have new information or find an error, please open an "Issue" at the top of the GitHub repository page to let us know.
 
-### ## 📜 License
+###  📜 License
 
 The content of this repository is licensed under the [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/).
