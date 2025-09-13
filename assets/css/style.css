@@ -53,14 +53,10 @@ body {
 nav {
     background-color: var(--primary-green);
     padding: 15px 40px;
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    gap: 30px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Adds a subtle shadow */
+    position: sticky; /* Makes the nav bar stick to the top when scrolling */
+    top: 0;
+    z-index: 1000;
 }
 
 nav a {
@@ -68,13 +64,13 @@ nav a {
     text-decoration: none;
     font-weight: bold;
     font-size: 1.1em;
-    padding-bottom: 5px;
-    border-bottom: 2px solid transparent;
-    transition: border-bottom 0.3s;
+    padding: 10px 15px; /* Adds padding for a larger click area */
+    border-radius: 5px; /* Slightly rounded corners for the hover effect */
+    transition: background-color 0.3s ease;
 }
 
 nav a:hover {
-    border-bottom: 2px solid var(--primary-red);
+    background-color: rgba(255, 255, 255, 0.15); /* A subtle highlight on hover */
 }
 
 /* --- Main Content Area --- */
