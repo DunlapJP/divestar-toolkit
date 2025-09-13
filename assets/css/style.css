@@ -290,3 +290,67 @@ h2 {
         flex-direction: column;
     }
 }
+
+/* --- Trustee Card Styling --- */
+.trustee-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.trustee-card {
+    background-color: var(--light-background);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+}
+
+.trustee-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.trustee-name {
+    margin: 0 0 5px 0;
+    font-size: 1.4em;
+    color: var(--primary-green);
+}
+
+.trustee-title {
+    margin: 0;
+    font-weight: bold;
+    color: var(--dark-text);
+}
+
+.trustee-type {
+    margin: 5px 0 20px 0;
+    font-style: italic;
+    color: #666;
+    font-size: 0.9em;
+}
+
+.trustee-contact {
+    display: flex;
+    gap: 15px;
+    border-top: 1px solid var(--border-color);
+    padding-top: 15px;
+}
+
+.trustee-contact a {
+    text-decoration: none;
+    padding: 8px 15px;
+    border: 1px solid var(--primary-green);
+    color: var(--primary-green);
+    border-radius: 8px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.trustee-contact a:hover {
+    background-color: var(--primary-green);
+    color: #fff;
+    border-color: var(--primary-green);
+}
