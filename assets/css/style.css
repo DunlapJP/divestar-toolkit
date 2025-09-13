@@ -7,7 +7,7 @@
     --dark-text: #333333;
     --background-color: #f9f9f9; /* Lighter gray background */
     --header-font: 'Georgia', serif;
-    --body-font: 'Helvetica', Arial, sans-serif;
+    --body-font: 'Inter', 'Helvetica', Arial, sans-serif;
 }
 
 /* --- General Body Styling --- */
@@ -59,6 +59,14 @@ nav {
     z-index: 1000;
 }
 
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 30px;
+}
+
 nav a {
     color: white;
     text-decoration: none;
@@ -73,14 +81,15 @@ nav a:hover {
     background-color: rgba(255, 255, 255, 0.15); /* A subtle highlight on hover */
 }
 
+
 /* --- Main Content Area --- */
 .main-content {
     padding: 40px;
     max-width: 900px;
-    margin: auto;
+    margin: 40px auto; /* Add margin to top and bottom */
     background-color: #fff; /* White background for content */
-    border-radius: 5px; /* Softer edges */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle shadow */
+    border-radius: 8px; /* Softer edges */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05); /* Subtle shadow */
 }
 
 h1, h2, h3 {
@@ -102,34 +111,6 @@ h2 {
    border-bottom: 2px solid #eeeeee;
 }
 
-
-/* --- Footer --- */
-.footer-container {
-    background-color: #f0f0f0;
-    border-top: 1px solid #e0e0e0;
-    text-align: center;
-    padding: 20px 40px;
-    font-size: 0.9em;
-    color: #666;
-}
-
-.footer-container a {
-    color: var(--primary-green);
-    text-decoration: none;
-}
-
-.footer-container a:hover {
-    text-decoration: underline;
-}
-
-/* --- Homepage Section Headings --- */
-.main-content h2 {
-    font-size: 2em;
-    margin-bottom: 25px;
-    padding-bottom: 10px;
-    border-bottom: 2px solid #eeeeee;
-    font-weight: normal;
-}
 
 /* --- Data Dashboard (KPIs) --- */
 .data-dashboard {
@@ -163,4 +144,32 @@ h2 {
     font-size: 1em;
     color: #666;
     margin-top: 5px;
+}
+
+/* --- Footer --- */
+.footer-container {
+    background-color: #f0f0f0;
+    border-top: 1px solid #e0e0e0;
+    text-align: center;
+    padding: 20px 40px;
+    font-size: 0.9em;
+    color: #666;
+}
+
+.footer-container a {
+    color: var(--primary-green);
+    text-decoration: none;
+}
+
+.footer-container a:hover {
+    text-decoration: underline;
+}
+
+/* --- Homepage Section Headings --- */
+.main-content h2 {
+    font-size: 2em;
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #eeeeee;
+    font-weight: normal;
 }
