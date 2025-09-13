@@ -1,6 +1,6 @@
 # Arkansas Teacher Retirement System (ATRS) Board of Trustees
 
-This is the official board of trustees for the Arkansas Teacher Retirement System (ATRS). This body is responsible for the fiduciary oversight of the pension fund, including the authorization of a \\$50 million investment in Israel Bonds in June 2025.
+This is the official board of trustees for the Arkansas Teacher Retirement System (ATRS). This body is responsible for the fiduciary oversight of the pension fund, including the authorization of a \$50 million investment in Israel Bonds in June 2025.
 
 The contact information below has been verified from official public sources.
 
