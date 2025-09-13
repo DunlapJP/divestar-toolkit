@@ -2,7 +2,6 @@
 layout: default
 title: Phone Script for Board Members
 ---
-
 # Phone Script: Calling Pension Board Members
 
 Making a phone call is one of the most impactful ways to make your voice heard. Board members are public officials, and it's their job to listen to the concerns of Arkansans.
