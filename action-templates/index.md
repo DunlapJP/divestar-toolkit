@@ -11,15 +11,15 @@ Making your voice heard is the most powerful tool we have. Use the resources bel
 
 ### Email Templates
 
-* **[Email the ATRS Board of Trustees](./email-template-to-atrs-board.md)**
+* **[Email the ATRS Board of Trustees]({{ '/action-templates/email-template-to-atrs-board.html' | relative_url }})**
     * *For contacting the Arkansas Teacher Retirement System board.*
 
-* **[Email the APERS Board of Trustees](./email-template-to-apers-board.md)**
+* **[Email the APERS Board of Trustees]({{ '/action-templates/email-template-to-apers-board.html' | relative_url }})**
     * *For contacting the Arkansas Public Employees' Retirement System board.*
 
 ---
 
 ### Phone Script
 
-* **[Phone Script for Board Members](./phone-script-for-board-members.md)**
+* **[Phone Script for Board Members]({{ '/action-templates/phone-script-for-board-members.html' | relative_url }})**
     * *A general script for calling members of either the ATRS or APERS boards.*
