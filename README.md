@@ -4,7 +4,7 @@
     <div class="kpi-group">
         <div class="kpi">
             <div class="kpi-value">$57 Million</div>
-            <div class="kpi-label">Invested by AR State Treasury (Face Value)</div>
+            <div class="kpi-label">Peak Investment by AR State Treasury (Face Value)</div>
         </div>
         <div class="kpi">
             <div class="kpi-value">$100 Million</div>
@@ -21,30 +21,29 @@
 
 ### An Open-Source Toolkit for a Divestment Campaign
 
-The state of Arkansas currently has **$157 million** of public money either invested in or authorized for the purchase of Israel Bonds. These funds include **$57 million** from the State Treasury and **$100 million** authorized by the state's two largest public pension systems, ATRS and APERS.
+The state of Arkansas has committed **$157 million** of public money to Israel Bonds. This staggering sum includes **$57 million** at its peak from the State Treasury's portfolio and **$100 million** *authorized* for purchase by the state's two largest public pension systems: the Arkansas Teacher Retirement System (ATRS) and the Arkansas Public Employees' Retirement System (APERS).
 
-This toolkit is an open-source, collaborative resource for the **Divest for AR Future** campaign. It tracks these public investments, provides contact information for the officials responsible, and offers templates for direct action. Our goal is to empower citizens and activists with verifiable data to achieve financial transparency and advocate for the divestment of our public funds.
+This toolkit is the central, open-source resource for the **Divest for AR Future** campaign. We track these public investments, identify the officials responsible for them, and provide the tools you need to take direct action. Our goal is to empower citizens with verifiable data to demand financial transparency and advocate for the divestment of our public funds.
 
-This toolkit is a living project, maintained by members of **Little Rock Peace for Palestine** and **Divest for AR Future**.
+This is a living project, maintained by members of **Little Rock Peace for Palestine** and **Divest for AR Future**.
 
 ---
 
-###  Explore the Toolkit
+### Take Action Now
 
-* **[📈 Investment Dashboard](./dashboard.html)**: View the interactive dashboard of Arkansas's investments.
-* **[📅 Timeline of Events](./timeline.html)**: Follow the key decisions and events.
-* **[🎯 Key Decision-Makers](./key-officials/)**: Find contact information for the board members of ATRS and APERS.
-* **[📣 Action Templates](./action-templates/)**: Get email and phone scripts to make your voice heard.
-* **[🔎 FOIA Resources](./foia-resources/)**: Learn how to file your own FOIA requests with our guide and templates.
+* **[📣 Use Action Templates](./action-templates/)**: Find pre-written email and phone scripts to contact the key decision-makers and make your voice heard.
+* **[🎯 Identify Key Decision-Makers](./key-officials/)**: Get the contact information for the board members of ATRS and APERS who oversee these funds.
+* **[📈 View the Investment Dashboard](./dashboard.html)**: See the interactive dashboard of Arkansas's investment timeline.
+* **[🔎 Use FOIA Resources](./foia-resources/)**: Learn how to file your own Freedom of Information Act requests with our guide and templates.
 
 {% include cta-box.html %}
 
 ---
 
-###  🤝 How to Contribute
+### 🤝 How to Contribute
 
-This is a collaborative effort, and we welcome your help! If you have new information or find an error, please open an "Issue" at the top of the GitHub repository page to let us know.
+This is a collaborative effort, and we welcome your help! If you have new information, find an error, or have a suggestion, please open an "Issue" at the top of the GitHub repository page to let us know.
 
-###  📜 License
+### 📜 License
 
 The content of this repository is licensed under the [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/).
