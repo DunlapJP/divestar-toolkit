@@ -5,7 +5,7 @@ title: Investment Dashboard
 
 # Arkansas's Public Investments in Israel Bonds
 
-This dashboard visualizes the data from our research, showing the timeline of total public funds committed by the state. The chart below is generated directly from the data in `_data/investments.csv`.
+This dashboard visualizes the data from our research, showing the timeline of total public funds committed by the state.
 
 <div class="chart-container" style="height: 500px; width: 100%; margin-top: 40px; background-color: #fdfdfd; padding: 20px; border-radius: 12px; border: 1px solid #e0e0e0;">
   <canvas id="investmentChart"></canvas>
