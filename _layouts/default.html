@@ -44,13 +44,32 @@
         </footer>
     </div>
 
+    <div id="trusteeModal" class="modal">
+      <div class="modal-content">
+        <span class="modal-close">&times;</span>
+        <h2 id="modalName">Trustee Name</h2>
+        <p id="modalTitle">Trustee Title</p>
+        <p id="modalType">Trustee Type</p>
+        <div class="modal-contact-info">
+            <div id="modalEmailContainer">
+                <strong>Email:</strong>
+                <a id="modalEmailLink" href="#"></a>
+            </div>
+            <div id="modalPhoneContainer">
+                <strong>Phone:</strong>
+                <a id="modalPhoneLink" href="#"></a>
+            </div>
+        </div>
+      </div>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
 
 <script>
 document.addEventListener("DOMContentLoaded", function() {
+  // Animation Observer
   const sections = document.querySelectorAll('.kpi, .trustee-card, .timeline-item, .document-card, .cta-box');
-
   const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
@@ -60,10 +79,75 @@ document.addEventListener("DOMContentLoaded", function() {
   }, {
     threshold: 0.1
   });
-
   sections.forEach(section => {
     section.classList.add('fade-in-section');
     observer.observe(section);
+  });
+
+  // Modal Logic
+  const modal = document.getElementById("trusteeModal");
+  const triggers = document.querySelectorAll(".modal-trigger");
+  const closeButton = document.querySelector(".modal-close");
+
+  function openModal(event) {
+    const card = event.currentTarget;
+    const name = card.dataset.name;
+    const title = card.dataset.title;
+    const type = card.dataset.type;
+    const email = card.dataset.email;
+    const phone = card.dataset.phone;
+
+    document.getElementById("modalName").textContent = name;
+    document.getElementById("modalTitle").textContent = title;
+    document.getElementById("modalType").textContent = type;
+
+    const emailContainer = document.getElementById("modalEmailContainer");
+    const emailLink = document.getElementById("modalEmailLink");
+    if (email) {
+      emailLink.href = `mailto:${email}`;
+      emailLink.textContent = email;
+      emailContainer.style.display = "block";
+    } else {
+      emailContainer.style.display = "none";
+    }
+    
+    const phoneContainer = document.getElementById("modalPhoneContainer");
+    const phoneLink = document.getElementById("modalPhoneLink");
+    if (phone) {
+      phoneLink.href = `tel:${phone}`;
+      phoneLink.textContent = phone;
+      phoneContainer.style.display = "block";
+    } else {
+      phoneContainer.style.display = "none";
+    }
+    
+    modal.style.display = "block";
+    document.body.classList.add("modal-open");
+  }
+
+  function closeModal() {
+    modal.style.display = "none";
+    document.body.classList.remove("modal-open");
+  }
+
+  triggers.forEach(trigger => {
+    trigger.addEventListener("click", openModal);
+  });
+
+  if (closeButton) {
+    closeButton.addEventListener("click", closeModal);
+  }
+
+  window.addEventListener("click", function(event) {
+    if (event.target == modal) {
+      closeModal();
+    }
+  });
+  
+  window.addEventListener("keydown", function(event) {
+    if (event.key === "Escape") {
+      closeModal();
+    }
   });
 });
 </script>
