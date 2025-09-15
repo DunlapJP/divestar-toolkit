@@ -15,11 +15,16 @@ title: APERS Board of Trustees
       <p class="trustee-type">{{ trustee.type }}</p>
       <div class="trustee-contact">
         {% if trustee.email %}
-          <a href="mailto:{{ trustee.email }}">Email</a>
-        {% else %}
-          {% endif %}
+          <div class="contact-info">
+            <a href="mailto:{{ trustee.email }}">Email</a>
+            <span>{{ trustee.email }}</span>
+          </div>
+        {% endif %}
         {% if trustee.phone %}
-          <a href="tel:{{ trustee.phone }}">Call</a>
+          <div class="contact-info">
+            <a href="tel:{{ trustee.phone }}">Call</a>
+            <span>{{ trustee.phone }}</span>
+          </div>
         {% endif %}
       </div>
     </div>
