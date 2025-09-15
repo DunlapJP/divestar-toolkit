@@ -8,9 +8,6 @@ title: Email Template for Pension Boards
 This template is for any concerned Arkansas citizen, especially active or retired teachers, to send to the members of the Arkansas Teacher Retirement System (ATRS) Board of Trustees.
 
 ### How to Use This Template
-... (the rest of your file content)
-
-### How to Use This Template
 
 1.  Find the contact information for the board members in our **[ATRS Board of Trustees List](../key-officials/atrs-board-of-trustees.md)**.
 2.  Copy the subject line and the email body below.
