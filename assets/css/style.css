@@ -22,6 +22,10 @@ body {
     line-height: 1.7;
 }
 
+body.modal-open {
+    overflow: hidden;
+}
+
 /* --- Main Page Container --- */
 .page-container {
     max-width: 1100px;
@@ -181,6 +185,12 @@ h2 {
     padding: 25px;
     display: flex;
     flex-direction: column;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.trustee-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    cursor: pointer;
 }
 .trustee-name {
     margin: 0 0 5px 0;
@@ -199,39 +209,93 @@ h2 {
     font-size: 0.9em;
     flex-grow: 1; /* Pushes contact info to the bottom */
 }
-.trustee-contact {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+.trustee-contact-actions {
     border-top: 1px solid var(--border-color);
     padding-top: 15px;
-}
-
-.contact-info {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
-
-.trustee-contact a {
-    text-decoration: none;
-    padding: 8px 15px;
-    border: 1px solid var(--primary-green);
-    color: var(--primary-green);
-    border-radius: 5px;
-    font-weight: 600;
-    transition: all 0.3s ease;
     text-align: center;
-    min-width: 80px;
 }
-.trustee-contact a:hover {
-    background-color: var(--primary-green);
-    color: #fff;
+.trustee-contact-actions span {
+    font-weight: 600;
+    color: var(--primary-green);
 }
 
-.contact-info span {
-    font-size: 0.9em;
-    color: var(--body-text);
+/* --- Modal Styling --- */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.6);
+    animation: fadeIn 0.3s;
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 30px 40px;
+    border: 1px solid var(--border-color);
+    width: 80%;
+    max-width: 500px;
+    border-radius: 12px;
+    position: relative;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    animation: slideIn 0.3s;
+}
+
+.modal-close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+.modal-close:hover,
+.modal-close:focus {
+    color: var(--dark-text);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-content h2 {
+    margin-top: 0;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 15px;
+}
+
+.modal-content p {
+    margin: 5px 0;
+}
+
+.modal-content p#modalType {
+    font-style: italic;
+    color: #888;
+    margin-bottom: 20px;
+}
+
+.modal-contact-info div {
+    margin-bottom: 10px;
+}
+
+.modal-contact-info a {
+    border-bottom: none;
+    margin-left: 10px;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0}
+    to {opacity: 1}
+}
+
+@keyframes slideIn {
+    from {transform: translateY(-50px); opacity: 0}
+    to {transform: translateY(0); opacity: 1}
 }
 
 /* --- Footer --- */
@@ -256,6 +320,10 @@ h2 {
     h2 { font-size: 1.8em; }
     .kpi-group { flex-direction: column; gap: 15px; }
     nav ul { justify-content: center; }
+    .modal-content {
+        width: 90%;
+        margin: 25% auto;
+    }
 }
 
 /* --- Document Archive Styling --- */
@@ -269,7 +337,7 @@ h2 {
 .document-card {
     background-color: var(--light-background);
     border: 1px solid var(--border-color);
-    border-radius: var(--border-radius-sm);
+    border-radius: 8px; /* Corrected variable name */
     padding: 25px;
     display: flex;
     flex-direction: column;
