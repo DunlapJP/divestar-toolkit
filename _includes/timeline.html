@@ -32,7 +32,7 @@
 .timeline-content {
     background-color: var(--light-background);
     padding: 20px 25px;
-    border-radius: var(--border-radius-sm);
+    border-radius: 8px; /* Corrected variable */
     border: 1px solid var(--border-color);
 }
 .timeline-title {
@@ -48,7 +48,8 @@
 </style>
 
 <div class="timeline">
-  {% for event in site.data.investments %}
+  {% assign sorted_events = site.data.investments | sort: "Transaction_Date" %}
+  {% for event in sorted_events %}
     {% if event.Transaction_Type == 'Peak Holding' or event.Transaction_Type == 'Authorization' or event.Transaction_Type == 'Legislative Action' %}
       <div class="timeline-item">
         <div class="timeline-date">{{ event.Transaction_Date | date: "%B %d, %Y" }}</div>
