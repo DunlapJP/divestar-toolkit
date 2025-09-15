@@ -1,0 +1,67 @@
+<style>
+/* --- Timeline Styling --- */
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 50px auto;
+    padding-left: 30px;
+    border-left: 3px solid var(--primary-green);
+}
+.timeline-item {
+    margin-bottom: 40px;
+    position: relative;
+}
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -37px;
+    top: 5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--white);
+    border: 3px solid var(--primary-green);
+}
+.timeline-date {
+    font-weight: 600;
+    color: var(--primary-red);
+    margin-bottom: 5px;
+    font-size: 0.9em;
+    font-family: var(--body-font);
+}
+.timeline-content {
+    background-color: var(--light-background);
+    padding: 20px 25px;
+    border-radius: var(--border-radius-sm);
+    border: 1px solid var(--border-color);
+}
+.timeline-title {
+    margin-top: 0;
+    color: var(--dark-text);
+    font-family: var(--header-font);
+    font-size: 1.3em;
+}
+.timeline-description {
+    margin-bottom: 0;
+    color: var(--body-text);
+}
+</style>
+
+<div class="timeline">
+  {% for event in site.data.investments %}
+    {% if event.Transaction_Type == 'Peak Holding' or event.Transaction_Type == 'Authorization' or event.Transaction_Type == 'Legislative Action' %}
+      <div class="timeline-item">
+        <div class="timeline-date">{{ event.Transaction_Date | date: "%B %d, %Y" }}</div>
+        <div class="timeline-content">
+          <h3 class="timeline-title">{{ event.Entity }} - {{ event.Transaction_Type }}</h3>
+          <p class="timeline-description">
+            {{ event.Description }} 
+            {% if event.Source_Link and event.Source_Link != "" %}
+              <a href="{{ event.Source_Link | relative_url }}" target="_blank">(View Source)</a>
+            {% endif %}
+          </p>
+        </div>
+      </div>
+    {% endif %}
+  {% endfor %}
+</div>
