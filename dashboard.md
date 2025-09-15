@@ -21,7 +21,6 @@ document.addEventListener("DOMContentLoaded", function() {
     complete: function(results) {
       const data = results.data;
       
-      // Filter for relevant investment events and sort by date
       const investmentEvents = data
         .filter(row => {
           const type = row.Transaction_Type ? row.Transaction_Type.trim() : '';
@@ -30,55 +29,49 @@ document.addEventListener("DOMContentLoaded", function() {
         .sort((a, b) => new Date(a.Transaction_Date) - new Date(b.Transaction_Date));
 
       let cumulativeAmount = 0;
-      const chartData = investmentEvents.map(event => {
-        const amount = parseFloat(event.Amount);
-        cumulativeAmount += amount;
-        return {
-          date: event.Transaction_Date,
-          amount: cumulativeAmount,
-          label: `${event.Entity.trim()} - ${event.Transaction_Type.trim()}`
-        };
-      });
-
+      const chartDataPoints = [];
+      const labelsForChart = [];
+      
       // Find the earliest investment date to establish a starting point
       const firstInvestmentDate = investmentEvents.length > 0 ? new Date(investmentEvents[0].Transaction_Date) : new Date();
       const treasuryStartDate = new Date(firstInvestmentDate);
-      treasuryStartDate.setDate(treasuryStartDate.getDate() - 1); // Set start point just before the first investment
+      treasuryStartDate.setDate(treasuryStartDate.getDate() - 1);
 
-      const initialTreasuryValue = 57000000; // Peak holding amount from the first relevant event
+      // Add a zero starting point for the chart
+      labelsForChart.push(treasuryStartDate.toISOString().split('T')[0]);
+      chartDataPoints.push({
+        y: 0,
+        label: "Initial State",
+        date: treasuryStartDate.toISOString().split('T')[0]
+      });
 
-      // Manually add the initial State Treasury holding as the base
-      const finalChartData = [
-          { date: treasuryStartDate.toISOString().split('T')[0], amount: 0, label: "Initial State" },
-          { date: investmentEvents[0].Transaction_Date, amount: initialTreasuryValue, label: investmentEvents[0].Entity.trim() + " Peak Holding" }
-      ];
-      
-      let runningTotal = initialTreasuryValue;
-      // Add subsequent authorizations
-      for(let i = 1; i < investmentEvents.length; i++) {
-          runningTotal += parseFloat(investmentEvents[i].Amount);
-          finalChartData.push({
-              date: investmentEvents[i].Transaction_Date,
-              amount: runningTotal,
-              label: investmentEvents[i].Entity.trim() + " Authorization"
-          });
-      }
-
-
-      const labels = finalChartData.map(d => d.date);
-      const values = finalChartData.map(d => d.amount);
+      // Process the events from the CSV
+      let runningTotal = 0;
+      investmentEvents.forEach(event => {
+        const amount = parseFloat(event.Amount);
+        runningTotal += amount;
+        labelsForChart.push(event.Transaction_Date);
+        chartDataPoints.push({
+          y: runningTotal,
+          label: `${event.Entity.trim()} - ${event.Transaction_Type.trim()}`,
+          date: event.Transaction_Date
+        });
+      });
 
       const ctx = document.getElementById('investmentChart').getContext('2d');
       new Chart(ctx, {
         type: 'line',
         data: {
-          labels: labels,
+          labels: labelsForChart,
           datasets: [{
             label: 'Total Public Funds Committed ($)',
-            data: values,
-            backgroundColor: 'rgba(217, 69, 69, 0.2)',
+            data: chartDataPoints.map(d => d.y),
+            backgroundColor: 'rgba(217, 69, 69, 0.1)', // More subtle background
             borderColor: 'rgba(217, 69, 69, 1)',
-            borderWidth: 3,
+            borderWidth: 2, // Slightly thinner line
+            pointBackgroundColor: 'rgba(217, 69, 69, 1)',
+            pointRadius: 4,
+            pointHoverRadius: 7,
             fill: true,
             tension: 0.1
           }]
@@ -91,23 +84,44 @@ document.addEventListener("DOMContentLoaded", function() {
               beginAtZero: true,
               ticks: {
                 callback: function(value) {
-                  return '$' + new Intl.NumberFormat().format(value);
+                  return '$' + new Intl.NumberFormat().format(value / 1000000) + 'M'; // Format as millions
+                },
+                font: {
+                    family: "'Source Sans Pro', sans-serif"
+                }
+              }
+            },
+            x: {
+              ticks: {
+                font: {
+                    family: "'Source Sans Pro', sans-serif"
                 }
               }
             }
           },
           plugins: {
+            legend: {
+                labels: {
+                    font: {
+                        family: "'Source Sans Pro', sans-serif",
+                        size: 14
+                    }
+                }
+            },
             tooltip: {
+              enabled: true,
+              mode: 'index',
+              intersect: false,
               callbacks: {
+                title: function(tooltipItems) {
+                    // Get the date from our custom data point object
+                    const date = chartDataPoints[tooltipItems[0].dataIndex].date;
+                    return new Date(date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+                },
                 label: function(context) {
-                  let label = context.dataset.label || '';
-                  if (label) {
-                    label += ': ';
-                  }
-                  if (context.parsed.y !== null) {
-                    label += new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(context.parsed.y);
-                  }
-                  return label;
+                  let point = chartDataPoints[context.dataIndex];
+                  let amount = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(context.parsed.y);
+                  return `${point.label}: ${amount}`;
                 }
               }
             }
@@ -116,5 +130,7 @@ document.addEventListener("DOMContentLoaded", function() {
       });
     }
   });
+});
+</script>
 });
 </script>
