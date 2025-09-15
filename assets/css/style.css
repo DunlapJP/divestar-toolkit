@@ -244,3 +244,44 @@ h2 {
     .kpi-group { flex-direction: column; gap: 15px; }
     nav ul { justify-content: center; }
 }
+
+/* --- Document Archive Styling --- */
+.document-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Default to a single column */
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.document-card {
+    background-color: var(--light-background);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius-sm);
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.document-card h3 {
+    margin: 0 0 10px 0;
+    font-size: 1.3em;
+    font-family: var(--header-font);
+}
+
+.document-card h3 a {
+    text-decoration: none;
+    border-bottom: none;
+}
+
+.document-card h3 a:hover {
+    color: var(--primary-green);
+}
+
+.document-card blockquote {
+    font-size: 0.95em;
+    margin: 0 0 15px 0;
+    padding-left: 15px;
+    border-left: 3px solid var(--border-color);
+    color: var(--body-text);
+    flex-grow: 1;
+}
