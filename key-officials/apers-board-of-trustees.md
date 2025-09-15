@@ -9,23 +9,17 @@ title: APERS Board of Trustees
 
 <div class="trustee-grid">
   {% for trustee in site.data.apers_trustees %}
-    <div class="trustee-card">
+    <div class="trustee-card modal-trigger"
+         data-name="{{ trustee.name }}" 
+         data-title="{{ trustee.title }}" 
+         data-type="{{ trustee.type }}"
+         data-email="{{ trustee.email }}"
+         data-phone="{{ trustee.phone }}">
       <h3 class="trustee-name">{{ trustee.name }}</h3>
       <p class="trustee-title">{{ trustee.title }}</p>
       <p class="trustee-type">{{ trustee.type }}</p>
-      <div class="trustee-contact">
-        {% if trustee.email %}
-          <div class="contact-info">
-            <a href="mailto:{{ trustee.email }}">Email</a>
-            <span>{{ trustee.email }}</span>
-          </div>
-        {% endif %}
-        {% if trustee.phone %}
-          <div class="contact-info">
-            <a href="tel:{{ trustee.phone }}">Call</a>
-            <span>{{ trustee.phone }}</span>
-          </div>
-        {% endif %}
+      <div class="trustee-contact-actions">
+        <span>View Contact Info</span>
       </div>
     </div>
   {% endfor %}
