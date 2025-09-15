@@ -201,10 +201,18 @@ h2 {
 }
 .trustee-contact {
     display: flex;
+    flex-direction: column;
     gap: 15px;
     border-top: 1px solid var(--border-color);
     padding-top: 15px;
 }
+
+.contact-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
 .trustee-contact a {
     text-decoration: none;
     padding: 8px 15px;
@@ -214,11 +222,16 @@ h2 {
     font-weight: 600;
     transition: all 0.3s ease;
     text-align: center;
-    flex: 1;
+    min-width: 80px;
 }
 .trustee-contact a:hover {
     background-color: var(--primary-green);
     color: #fff;
+}
+
+.contact-info span {
+    font-size: 0.9em;
+    color: var(--body-text);
 }
 
 /* --- Footer --- */
