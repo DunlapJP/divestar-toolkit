@@ -40,6 +40,12 @@ This is a living project, maintained by members of **Little Rock Peace for Pales
 
 ---
 
+## Timeline of Key Events
+
+{% include timeline.html %}
+
+---
+
 ### 🤝 How to Contribute
 
 This is a collaborative effort, and we welcome your help! If you have new information, find an error, or have a suggestion, please open an "Issue" at the top of the GitHub repository page to let us know.
