@@ -12,7 +12,7 @@ This archive contains the primary source documents used to build the DivestAR To
 
 <div class="document-grid">
   <div class="document-card">
-    <h3><a href="./2024-10-07_AR-Treasury_Portfolio-Holdings_Israel-Bonds.xlsx" target="_blank">Arkansas State Treasury Israel Bond Holdings (Oct. 7, 2024)</a></h3>
+    <h3><a href="./2024-10-07_AR-Treasury_Portfolio-Holdings_Israel-Bonds.xlsx%20-%20Israel%20Bonds.csv" target="_blank">Arkansas State Treasury Israel Bond Holdings (Oct. 7, 2024)</a></h3>
     <blockquote>This spreadsheet details the State Treasurer's Israel Bond portfolio. While this report shows a then-current face value of $52 million due to bond maturities, it confirms the state's significant, ongoing investment which peaked at $57 million.</blockquote>
   </div>
   <div class="document-card">
