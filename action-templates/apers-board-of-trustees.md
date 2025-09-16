@@ -1,42 +1,49 @@
+---
+layout: default
+title: APERS Board of Trustees
+---
+
 # Arkansas Public Employees' Retirement System (APERS) Board of Trustees
 
-This is the official board of trustees for the Arkansas Public Employees' Retirement System (APERS). This body is responsible for the fiduciary oversight of the pension fund, including the authorization of a \$50 million investment in Israel Bonds on June 11, 2025.
+<p>This is the official board of trustees for the Arkansas Public Employees' Retirement System (APERS). This body is responsible for the fiduciary oversight of the pension fund, including the authorization of a $50 million investment in Israel Bonds on June 11, 2025.</p>
 
-The source for this list can be found in the APERS Annual Comprehensive Financial Report, page 11, located [here](../source-documents/2024_APERS_Annual-Financial-Report.pdf).
+<p>The source for this list can be found in the APERS Annual Comprehensive Financial Report, page 11, located <a href="../source-documents/2024_APERS_Annual-Financial-Report.pdf" target="_blank">here</a>.</p>
 
 ---
 
-###  Board Members
+### Board Members
 
 **Ex Officio Trustees (Appointed by position):**
 
-* **Hon. Dennis Milligan**
-    * *Auditor of State*
-* **Hon. Larry Walther**
-    * *Treasurer of State*
-* **Hon. Kay Barnhill**
-    * *Director, Department of Finance & Administration*
+* **Larry Walther**
+    * *Chair (Ex-Officio Member, Treasurer of State)*
+* **Jim Hudson**
+    * *Ex-Officio Member, Secretary of the Department of Finance and Administration*
+* **Dennis Milligan**
+    * *Ex-Officio Member, Auditor of State*
 
 **Trustees Appointed by the Governor:**
 
-* **Mr. Candido S. Carrejo, Jr.**
-    * *State Employee Member*
-* **Hon. David Hudson**
-    * *County Employee Member*
-* **Mr. Dale T. Douthit**
-    * *City Employee Member*
-* **Ms. Johnita Mizell**
-    * *Retirant Member*
-* **Mr. Larry Bryant**
-    * *Other Non-State Employee Member*
+* **Daryl Bassett**
+    * *Vice Chair (State Employee Member, Governor Appointee)*
+* **Gary Carnahan**
+    * *Municipal Employee Member, City Engineer, Governor Appointee*
+* **Dale Douthit**
+    * *State Employee Member, Governor Appointee*
+* **Candice Franks**
+    * *State Employee Member, Governor Appointee*
+* **Joe Hurst**
+    * *Municipal Employee Member, Mayor of Van Buren, Governor Appointee*
+* **Barry Moehring**
+    * *County Employee Member, Benton County Judge, Governor Appointee*
 
-**Trustees Elected by APERS Members:**
+**Trustees Appointed by the Legislature:**
 
-* **Ms. Carol C. Bevis**
-    * *State Employee Member*
-* **Ms. Amy Fecher**
-    * *State Employee Member*
-* **Hon. Wes Booker**
-    * *County Employee Member*
-* **Ms. Sherry Richardson**
-    * *City Employee Member*
+* **Kaye Donham**
+    * *Retired State Employee, Speaker of the House of Representatives Appointee*
+* **Gary Wallace**
+    * *Retired Law Enforcement Member, President Pro Tempore of the Senate Appointee*
+* **Russell White**
+    * *Retired Law Enforcement Member, Speaker of the House of Representatives Appointee*
+* **Richard Wilson**
+    * *Retired State Employee, President Pro Tempore of the Senate Appointee*
