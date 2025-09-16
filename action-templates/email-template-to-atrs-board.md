@@ -9,7 +9,7 @@ This template is for any concerned Arkansas citizen, especially active or retire
 
 ### How to Use This Template
 
-1.  Find the contact information for the board members in our **[ATRS Board of Trustees List](../key-officials/atrs-board-of-trustees.md)**.
+1.  Find the contact information for the board members in our **[ATRS Board of Trustees List]({{ '/key-officials/atrs-board-of-trustees.html' | relative_url }})**.
 2.  Copy the subject line and the email body below.
 3.  Personalize the sections in **[bold brackets]**. A personal story or connection is always more powerful.
 4.  Send the email respectfully to one or more board members.
