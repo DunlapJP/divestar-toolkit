@@ -56,6 +56,24 @@ This archive contains the primary source documents used to build the DivestAR To
 </div>
 
 ---
+## FOIA Response: State Auditor & ATRS (June 18, 2025)
+
+<div class="document-grid">
+  <div class="document-card">
+    <h3><a href="./FOIA-Response-ATRS-2025-06-18/State%20Auditors%20Emails/" target="_blank">State Auditor's Office Emails</a></h3>
+    <blockquote>This collection of emails from the offices of Auditor Dennis Milligan and his staff reveals frequent communication and promotional material from Israel Bonds representatives, providing insight into the marketing and political nature of these investments.</blockquote>
+  </div>
+  <div class="document-card">
+    <h3><a href="./FOIA-Response-ATRS-2025-06-18/ATRS%20Staff%20Emails/" target="_blank">ATRS Staff Emails</a></h3>
+    <blockquote>Internal and external email correspondence from the staff of the Arkansas Teacher Retirement System related to the consideration and authorization of Israel Bond investments.</blockquote>
+  </div>
+  <div class="document-card">
+    <h3><a href="./FOIA-Response-ATRS-2025-06-18/Board%20Rules/" target="_blank">ATRS Board Rules & Policies</a></h3>
+    <blockquote>Official rules, policies, and resolutions from the ATRS Board of Trustees, providing the governance framework under which investment decisions are made.</blockquote>
+  </div>
+</div>
+
+---
 ## Government & Legal Press Releases
 
 <div class="document-grid">
