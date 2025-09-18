@@ -29,12 +29,13 @@ This is a living project, maintained by members of **Little Rock Peace for Pales
 
 ---
 
-### Take Action Now
+### Get Involved
 
-* **[📣 Use Action Templates](./action-templates/)**: Find pre-written email and phone scripts to contact the key decision-makers and make your voice heard.
-* **[🎯 Identify Key Decision-Makers](./key-officials/)**: Get the contact information for the board members of ATRS and APERS who oversee these funds.
-* **[📈 View the Investment Dashboard](./dashboard.html)**: See the interactive dashboard of Arkansas's investment timeline.
-* **[🔎 Use FOIA Resources](./foia-resources/)**: Learn how to file your own Freedom of Information Act requests with our guide and templates.
+* **[📈 View the Investment Dashboard](./dashboard.html)**: See the interactive timeline of Arkansas's public investments in Israel Bonds.
+* **[📂 Browse the Evidence Archive](./source-documents/)**: Examine the primary source documents, including FOIA responses and financial reports.
+* **[🎯 Identify Key Decision-Makers](./key-officials/)**: Find contact information for the public officials who oversee these funds.
+* **[📣 Use Action Templates](./action-templates/)**: Use our pre-written email and phone scripts to make your voice heard.
+* **[🔎 Use FOIA Resources](./foia-resources/)**: Learn how to file your own Freedom of Information Act requests.
 
 {% include cta-box.html %}
 
